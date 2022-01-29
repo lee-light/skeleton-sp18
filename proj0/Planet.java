@@ -23,7 +23,7 @@ public class Planet {
 
     public double calcDistance(Planet p) {
         double disc_ex = (p.xxPos - this.xxPos) * (p.xxPos - this.xxPos)
-                + (p.yyPos - this.xxPos) * (p.yyPos - this.xxPos);
+                + (p.yyPos - this.yyPos) * (p.yyPos - this.yyPos);
         return Math.sqrt(disc_ex);
     }
 
