@@ -50,7 +50,7 @@ public class NBody {
                 Planets[i].update(dt, xForces[i], yForces[i]);
             }
             // StdDraw.clear();
-            StdDraw.picture(0, 0, imgPath);
+            StdDraw.picture(0, 0,  "./images/starfield.jpg");
             for (int i = 0; i < Planets.length; i++) {
                 Planets[i].draw();
             }
