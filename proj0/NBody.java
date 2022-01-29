@@ -28,14 +28,14 @@ public class NBody {
         double dt = Double.parseDouble(args[1]);
         String filename = args[2];
         double radius = readRadius(filename);
-        Planet[] planets = readPlanets(filename);
+        Planet[] Planets = readPlanets(filename);
         StdDraw.enableDoubleBuffering();
         StdDraw.setScale(-radius, radius);
         StdDraw.clear();
         StdDraw.picture(0, 0, "./images/starfield.jpg");
         StdDraw.show();
-        for (int i = 0; i < planets.length; i++) {
-            planets[i].draw();
+        for (int i = 0; i < Planets.length; i++) {
+            Planets[i].draw();
         }
         StdDraw.show();
 
